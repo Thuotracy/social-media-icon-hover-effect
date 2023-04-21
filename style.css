@@ -35,3 +35,22 @@ ul li{
     cursor: pointer;
     transition: .5s;
 }
+
+ul li::before{
+    content: '';
+    position: absolute;
+    inset: 30px;
+    box-shadow: 0 0 0 10px var(--bg),
+    0 0 0 20px var(--bg),
+    0 0 0 22px var(--clr);
+    transition: .5s;
+}
+
+ul li::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: var(--bg);
+    transform: rotate(45deg);
+    transition: .5s;
+}

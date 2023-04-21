@@ -54,3 +54,22 @@ ul li::after{
     transform: rotate(45deg);
     transition: .5s;
 }
+
+ul li a{
+    position: relative;
+    text-decoration: none;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li a i{
+    font-size: 2em;
+    transition: .5s;
+    color: var(--clr);
+}
+
+ul li :hover a i{
+    transform: translateY(-25%);
+}

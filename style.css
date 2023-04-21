@@ -9,5 +9,29 @@
 }
 
 body{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    gap: 50px;
+    background: var(--bg);
+}
+
+ul{
+    position: relative;
+    display: flex;
+    gap: 50px;
+}
+
+ul li{
+    position: relative;
+    list-style: none;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: .5s;
 }

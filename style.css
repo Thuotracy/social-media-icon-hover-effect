@@ -130,7 +130,7 @@ ul.effect03 li:hover::after{
     background: var(--clr);
 }
 
-/* ul.effect03 li:hover a i,
+ul.effect03 li:hover a i,
 ul.effect03 li:hover a span{
     color: #fff;
-} */
+}

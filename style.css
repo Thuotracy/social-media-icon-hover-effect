@@ -33,17 +33,17 @@ ul li{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    transition: .5s;
+    transition: 0.5s;
 }
 
 ul li::before{
     content: '';
     position: absolute;
     inset: 30px;
-    box-shadow: 0 0 0 10px var(--bg),
+    box-shadow: 0 0 0 10px var(--clr),
     0 0 0 20px var(--bg),
     0 0 0 22px var(--clr);
-    transition: .5s;
+    transition: 0.5s;
 }
 
 ul li::after{
@@ -52,7 +52,7 @@ ul li::after{
     inset: 0;
     background: var(--bg);
     transform: rotate(45deg);
-    transition: .5s;
+    transition: 0.5s;
 }
 
 ul li a{
@@ -66,10 +66,38 @@ ul li a{
 
 ul li a i{
     font-size: 2em;
-    transition: .5s;
+    transition: 0.5s;
     color: var(--clr);
 }
 
-ul li :hover a i{
+ul li:hover a i{
     transform: translateY(-25%);
+}
+
+ul li a span{
+    position: absolute;
+    font-family: consolas;
+    color: var(--clr);
+    opacity: 0;
+    transition: 0.5s;
+    transform: scale(0) translateY(50%);
+}
+
+ul li:hover a span{
+    opacity: 1;
+    transform: scale(1) translateY(100%);
+}
+
+/* hover-effect 01 */
+ul.effect01 li:hover::before{
+    inset: 15px;
+}
+
+ul.effect01 li:hover::after{
+    inset: -10px;
+}
+
+ul.effect01 li:hover a i,
+ul.effect01 li:hover a span{
+    filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
 }

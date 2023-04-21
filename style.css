@@ -101,3 +101,36 @@ ul.effect01 li:hover a i,
 ul.effect01 li:hover a span{
     filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
 }
+
+
+/* hover-effect 02 */
+ul.effect02 li:hover::before{
+    inset: 15px;
+}
+
+ul.effect02 li:hover::after{
+    inset: 0px;
+    transform: rotate(0deg);
+}
+
+ul.effect02 li:hover a i,
+ul.effect02 li:hover a span{
+    filter: drop-shadow(0 0 20px var(--clr)) drop-shadow(0 0 40px var(--clr)) drop-shadow(0 0 60px var(--clr));
+}
+
+
+/* hover-effect 03 */
+ul.effect03 li:hover::before{
+    inset: 15px;
+}
+
+ul.effect03 li:hover::after{
+    inset: 0px;
+    transform: rotate(0deg);
+    background: var(--clr);
+}
+
+/* ul.effect03 li:hover a i,
+ul.effect03 li:hover a span{
+    color: #fff;
+} */

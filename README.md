@@ -1,7 +1,7 @@
 ## ICON HOVER EFFECT
 
 ## Description
-CSS unfold image hover effect.
+CSS social media icon hover effect.
 
 ## Live link
 https://thuotracy.github.io/unfold-image-hover-effect/

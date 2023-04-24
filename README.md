@@ -4,7 +4,7 @@
 CSS social media icon hover effect.
 
 ## Live link
-https://thuotracy.github.io/unfold-image-hover-effect/
+https://thuotracy.github.io/social-media-icon-hover-effect/
 
 ## Technologies Used
 * HTML
